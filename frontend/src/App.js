@@ -1,22 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Table from 'react-bootstrap/Table';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Table responsive bordered hover size="sm">
+          <thead>
+            <tr>
+              <th>Events</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Array.from({ length: 12 }).map((_, index) => (
+              <tr>
+                <td key={index}>Table cell {index}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
       </header>
     </div>
   );
