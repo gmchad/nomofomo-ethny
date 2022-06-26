@@ -1,0 +1,152 @@
+[
+  {
+    "title": "3x3 basket",
+    "description": "NFTBA",
+    "duration": 6,
+    "endDatetime": "20220618T700000Z",
+    "venue": "Columbus Park",
+    "location": "Mulberry Street &, Baxter St, New York, NY 10013",
+    "startDatetime": "20220618T100000Z",
+    "contractAddress": "0xe4f85223c4c81856988508d210fc62480de5352b"
+  },
+  {
+    "title": "Connecting & Celebrating latin culture in WEB3",
+    "description": "Sazón",
+    "duration": 11,
+    "endDatetime": "20220619T010000Z",
+    "venue": "Brand Experience Lab",
+    "location": "234 16th Street #4th floor, Jersey City, NJ 07310",
+    "startDatetime": "20220618T140000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "Photoweek (NFT Photography Event and Gallery Expo)",
+    "description": "Comp Stomp Studios",
+    "duration": 8,
+    "endDatetime": "20220619T230000Z",
+    "venue": "Stems DAO Cafe",
+    "location": "70 Hester Street, New York, NY 10002",
+    "startDatetime": "20220618T150000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "DeadHeads NYC",
+    "description": "GMI Studios x Americana",
+    "duration": 8,
+    "endDatetime": "20220619T230000Z",
+    "venue": "Lightbox",
+    "location": "248 West 37th St, New York, NY 10018",
+    "startDatetime": "20220618T150000Z",
+    "contractAddress": "0xe4f85223c4c81856988508d210fc62480de5352b"
+  },
+  {
+    "title": "Photoweek (NFT Photography Event and Gallery Expo)",
+    "description": "Comp Stomp Studios",
+    "duration": 16,
+    "endDatetime": "20220620T070000Z",
+    "venue": "Stems DAO Cafe",
+    "location": "70 Hester Street, New York, NY 10002",
+    "startDatetime": "20220619T150000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "A Screen of One's Own Exhibition",
+    "description": "NFT Asia",
+    "duration": 8,
+    "endDatetime": "20220619T060000Z",
+    "venue": "Superchief Gallery",
+    "location": "56 E 11th St, New York, NY 10003",
+    "startDatetime": "20220619T220000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "Digital Diaspora Pt 2",
+    "description": "Diana Sinclair x Driftershoots",
+    "duration": 7,
+    "endDatetime": "20220619T220000Z",
+    "venue": "Samsung 837",
+    "location": "837 Washington ST, New York, NY 10014",
+    "startDatetime": "20220619T150000Z",
+    "contractAddress": "0xe4f85223c4c81856988508d210fc62480de5352b"
+  },
+  {
+    "title": "music x web3 meetup",
+    "description": "WarpSound + 0xMusic",
+    "duration": 6,
+    "endDatetime": "20220620T010000Z",
+    "venue": "The Delancy",
+    "location": "168 Delancey St, New York, NY 10002",
+    "startDatetime": "20220619T180000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "GoldenDAO NFT NYC Opening Rooftop Party",
+    "description": "Andrew Yang + GoldenDAO + Bubble DAO + DWG Guild",
+    "duration": 4,
+    "endDatetime": "20220619T020000Z",
+    "venue": "High Bar",
+    "location": "346 W 40th St, New York, NY 10018",
+    "startDatetime": "20220619T220000Z",
+    "contractAddress": "0xe4f85223c4c81856988508d210fc62480de5352b"
+  },
+  {
+    "title": "W3BTHR33 L0UNG3",
+    "description": "Harmony One",
+    "duration": 11,
+    "endDatetime": "20220620T200000Z",
+    "venue": "Studio Arte",
+    "location": "265 West 37th Street, NY 10018",
+    "startDatetime": "20220620T090000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "Rug Radio NFT Photo Gallery Exhibition",
+    "description": "Rug Radio",
+    "duration": 9,
+    "endDatetime": "20220620T190000Z",
+    "venue": "Superchief NFT Gallery",
+    "location": "56 East 11th St., New York, NY 10003",
+    "startDatetime": "20220620T100000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "Soul Night",
+    "description": "AEON Studio x AI Network",
+    "duration": 7,
+    "endDatetime": "20220620T170000Z",
+    "venue": "Superchief NFT Gallery",
+    "location": "345 Adams Street, Brooklyn, NY, 11201",
+    "startDatetime": "20220620T100000Z",
+    "contractAddress": "0xe4f85223c4c81856988508d210fc62480de5352b"
+  },
+  {
+    "title": "Urban Outfitters x Cryptoon Goonz Pop Up",
+    "description": "Cryptoon Goonz",
+    "duration": 5,
+    "endDatetime": "20220620T170000Z",
+    "venue": "Urban Outfitters Herald Square",
+    "location": "1333 Broadway Herald Sq, NY 10018",
+    "startDatetime": "20220620T120000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  },
+  {
+    "title": "Ape Fest",
+    "description": "BAYC",
+    "duration": 5,
+    "endDatetime": "20220620T210000Z",
+    "venue": "Pier 17",
+    "location": "89 South St, New York, NY 10038",
+    "startDatetime": "20220620T170000Z",
+    "contractAddress": "0xe4f85223c4c81856988508d210fc62480de5352b"
+  },
+  {
+    "title": "ABS x Coinbase party (IYKYK)",
+    "description": "Adam Bomb Squad",
+    "duration": 4,
+    "endDatetime": "20220621T020000Z",
+    "venue": "Paradise Club",
+    "location": "701 7th Ave, NY 10036",
+    "startDatetime": "20220620T220000Z",
+    "contractAddress": "0xf46c9571d4b3d461e17e8683d26412d5eb32066b"
+  }
+]

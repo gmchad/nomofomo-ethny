@@ -16,7 +16,7 @@ import { useMoralisWeb3Api } from "react-moralis";
 import AddToCalendarHOC from 'react-add-to-calendar-hoc';
 
 const erc721aABI = require('./erc721a.json')
-const data = require('./sampledata.json');
+const data = require('./eventData.json');
 
 const Events = () => {
 
@@ -44,7 +44,7 @@ const Events = () => {
     }
     if (account) {
       const address = `connected to ${String(account.address).substring(0, 6)}...${String(account.address).substring(36)}`
-      toast.success(address)
+      //toast.success(address)
     }
   }, [signer])
 
@@ -85,19 +85,19 @@ const Events = () => {
 
   const signUp = (index) => {
     console.log(index)
-    const name = events[index].name
-    toast(name)
+    const currentEvent = events[index]
 
     // set current event
 
     const event = {
-      description: 'Description of event. Going to have a lot of fun doing things that we scheduled ahead of time.',
-      duration: 1,
-      endDatetime: '20220619T220000Z',
-      location: 'NYC',
-      startDatetime: '20220619T210000Z',
-      title: 'Super Fun Event',
+      description: currentEvent.description,
+      duration: currentEvent.duration,
+      endDatetime: currentEvent.endDatetime,
+      location: currentEvent.location,
+      startDatetime: currentEvent.startDatetime,
+      title: currentEvent.title,
     }
+
     setCurrentEvent(event)
     setShow(true)
   }
@@ -112,13 +112,12 @@ const Events = () => {
       </thead>
       <tbody>
         {events.map((item, index) => (
-          <tr key={index}>
+          <tr key={index} className="event-row">
             {/*Object.values(item).map((elem, i) => (<td key={i}>{elem}</td>))*/}
-            <td>{item.name}</td>
+            <td>{item.title}</td>
             <td>{item.venue}</td>
-            <td>{item.date}</td>
-            <td>{item.time}</td>
-            <td>{item.address}</td>
+            <td>{item.startDatetime}</td>
+            <td>{item.location}</td>
             <td><Button variant="primary" onClick={() => signUp(index)}>Sign Up</Button></td>
           </tr>
         ))}
@@ -127,7 +126,7 @@ const Events = () => {
 
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>Modal heading</Modal.Title>
+        <Modal.Title>{currentEvent.title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <AddToCalendarDropdown
@@ -140,9 +139,6 @@ const Events = () => {
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Close
-        </Button>
-        <Button variant="primary" onClick={handleClose}>
-          Save Changes
         </Button>
       </Modal.Footer>
     </Modal>
