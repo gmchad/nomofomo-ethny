@@ -2,7 +2,6 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Dropdown from 'react-bootstrap/Dropdown';
-import Image from 'react-bootstrap/Image'
 
 import { useAccount, useContract, useSigner } from 'wagmi'
 import React, { useEffect, useState} from "react";
