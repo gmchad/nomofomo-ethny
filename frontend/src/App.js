@@ -9,8 +9,13 @@ import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { ToastContainer } from 'react-toastify'
 
+import { MoralisProvider } from "react-moralis";
+
 import Events from './Events';
 import Header from './Header';
+
+const moralisURL = process.env.REACT_APP_MORALIS_URL
+const moralisID  = process.env.REACT_APP_MORALIS_ID
 
 const { chains, provider } = configureChains(
   [ chain.rinkeby ],
@@ -44,9 +49,11 @@ function App() {
   return (
     <WagmiConfig client={client}>
       <RainbowKitProvider chains={chains}>
-        <ToastContainer/>
-        <Header />
-        <Events/>
+        <MoralisProvider serverUrl={moralisURL} appId={moralisID}>
+          <ToastContainer/>
+          <Header />
+          <Events/>
+        </MoralisProvider>
       </RainbowKitProvider>
     </WagmiConfig>
   );

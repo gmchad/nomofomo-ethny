@@ -3,12 +3,20 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Dropdown from 'react-bootstrap/Dropdown';
 
+import { ethers } from "ethers";
+
 import { useAccount, useContract, useSigner } from 'wagmi'
 import React, { useEffect, useState} from "react";
 import { toast } from 'react-toastify'
+import { useMoralis } from "react-moralis";
+
+import { useMoralisWeb3Api } from "react-moralis";
 
 // calendar
 import AddToCalendarHOC from 'react-add-to-calendar-hoc';
+
+const erc721aABI = require('./erc721a.json')
+const data = require('./sampledata.json');
 
 const Events = () => {
 
@@ -19,26 +27,60 @@ const Events = () => {
   const [events, setEvents] = useState([])
   const [currentEvent, setCurrentEvent] = useState({})
 
+  //const { authenticate, isAuthenticated, user } = useMoralis();
+  //const Web3Api = useMoralisWeb3Api();
+
   // modal hooks
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   useEffect(() => {
+    setEvents(data)
     console.log('signer success: ', isSuccess)
     if (isSuccess) {
       console.log(signer)
+      filterEvents()
     }
     if (account) {
       const address = `connected to ${String(account.address).substring(0, 6)}...${String(account.address).substring(36)}`
       toast.success(address)
     }
-    filterEvents()
-  }, [account])
+  }, [signer])
 
-  const filterEvents = () => {
-    const data = require('./sampledata.json');
-    setEvents(data)
+
+  /*
+  const auth = async () => {
+    await authenticate()
+    .then(async (user) => {
+      console.log(user.get("ethAddress"));
+      //await filterEvents()
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+  */
+
+  const filterEvents = async () => {
+    let filteredEvents = []
+ 
+    for (let i = 0; i < data.length; i++) {
+      let element = data[i];
+      let contract = new ethers.Contract(element.contractAddress, erc721aABI, signer);
+      console.log(element.contractAddress)
+      console.log(account.address)
+      let balance = await contract.balanceOf(account.address)
+      balance = balance.toNumber()
+      
+      console.log(balance)
+      if (balance > 0) {
+        filteredEvents.push(data[i])
+      }
+    }
+
+    setEvents(filteredEvents)
+
   }
 
   const signUp = (index) => {
