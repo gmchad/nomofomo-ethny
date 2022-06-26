@@ -1,6 +1,6 @@
 # FOMO NOMO - ETHNY
 
-Find token events way easier by connecting your wallet and seeing which events you can go to 🎉
+Find token-gated events way easier by connecting your wallet and seeing which events you can go to with calendar integration 🎉
 
 ### Frontend
 `cd frontend && npm start dev`
