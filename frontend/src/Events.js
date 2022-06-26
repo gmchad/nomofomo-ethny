@@ -107,7 +107,10 @@ const Events = () => {
     <Table responsive size="sm">
       <thead>
         <tr>
-          <th>Events</th>
+          <th>Event Name</th>
+          <th>Venue</th>
+          <th>Start Time</th>
+          <th>Location</th>
         </tr>
       </thead>
       <tbody>
