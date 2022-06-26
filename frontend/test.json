@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Digital Diaspora Pt 2",
+    "venue": "Samsung 837",
+    "location": "837 Washington ST, New York, NY 10014",
+    "date": "06/19/22",
+    "localtime": "3pm to 10pm",
+    "contractaddress": "0x509a050f573BE0D5E01a73C3726E17161729558B"
+  },
+  {
+    "name": "Rug Radio NFT Photo Gallery Exhibition",
+    "venue": "Superchief NFT Gallery",
+    "location": "56 East 11th St., New York, NY 10003",
+    "date": "06/20/22",
+    "localtime": "10am to 7pm",
+    "contractaddress": "0xd1d411D2Da363144248b98aDaB453aa3B19cCF04"
+  },
+  {
+    "name": "Urban Outfitters x Cryptoon Goonz Pop Up",
+    "venue": "Urban Outfitters Herald Square",
+    "location": "1333 Broadway Herald Sq, NY 10018",
+    "date": "06/20/22",
+    "localtime": "12pm to 5pm",
+    "contractaddress": "0x0322F6f11A94CFB1b5B6E95E059d8DEB2bf17D6A"
+  },
+  {
+    "name": "Ape Fest",
+    "venue": "Pier 17",
+    "location": "89 South St, New York, NY 10038",
+    "date": "06/20/22",
+    "localtime": "5pm to 10pm",
+    "contractaddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
+  },
+  {
+    "name": "ABS x Coinbase party (IYKYK)",
+    "venue": "Paradise Club",
+    "location": "20 Times Square, 701 7th Ave, NY 10036",
+    "date": "06/20/22",
+    "localtime": "10pm to 2am",
+    "contractaddress": "0x7AB2352b1D2e185560494D5e577F9D3c238b78C5"
+  }
+]
